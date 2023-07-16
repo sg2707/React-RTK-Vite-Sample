@@ -37,7 +37,9 @@ export const DetailLoader: React.FC<{
         >
           {`${launch.mission_name} - ${launch.launch_year}`}
         </Link>
-        <Typography sx={{ mt: 2 }}>{`Details: ${launch.details}`}</Typography>
+        <Typography sx={{ mt: 2 }}>{`Details: ${
+          launch.details ?? "Not available"
+        }`}</Typography>
         <Typography sx={{ mt: 2 }}>
           {`Launch date: ${new Date(launch.launch_date_utc)?.toLocaleString()}`}
         </Typography>
