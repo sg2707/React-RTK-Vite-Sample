@@ -12,3 +12,7 @@ You will see all launches listed on the dashboard as tiles
 
 If you need to see the details of a specific launch, click on the tile. This will bring a modal with data, you can click anywhere outside of the modal to close it.
 ![image](https://github.com/sg2707/React-RTK-Vite-Sample/assets/28666415/6ff9da19-3eb1-455f-bfaa-00b0a5ae15ca)
+
+You can navigate to available article of the launch by clicking on the Modal titile (launch name with year)
+![image](https://github.com/sg2707/React-RTK-Vite-Sample/assets/28666415/744f4fb4-7f58-4914-9b63-8c86a8676ef5)
+
