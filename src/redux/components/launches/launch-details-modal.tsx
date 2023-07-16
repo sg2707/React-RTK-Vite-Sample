@@ -18,15 +18,15 @@ export const DetailLoader: React.FC<{
     data: launch,
     isSuccess,
     isError,
+    isFetching,
     isLoading,
     error,
   } = useGetLaunchQuery(flight_number, { skip: flight_number === 0 });
 
   let launchContent;
-  if (isLoading) {
+  if (isFetching || isLoading) {
     launchContent = <LinearProgress />;
-  }
-  if (isSuccess) {
+  } else if (isSuccess) {
     launchContent = (
       <>
         <Link
